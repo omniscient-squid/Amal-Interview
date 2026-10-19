@@ -74,60 +74,65 @@ body {
 	}
 
 	.menu_mark_UL {
-			position: absolute;
-			overflow: visible;
-		}
+		position: absolute;
+		overflow: visible;
+	}
 
 }
 
 /* Interview */
 
-
-
 .wrapper {
 	margin: var(--margin-outside);
+}
 
-		.interview_main {
-			margin-top: 1rem;
+.section-heading {
+	font-family: "arial-rounded-mt-pro";
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
 
-		.section-heading {
-			font-family: "arial-rounded-mt-pro";
-			text-transform: uppercase;
-			font-size: 1.5rem;
-		}
+.interview-headline {
+	font-family: "Libre Caslon Condensed";
+	font-size: 3.5rem;
+	text-align: center;
+	line-height: -15%;
+}
 
-		.interview_heading {
-			font-family: "Libre Caslon Condensed";
-			font-size: 3.5rem;
-			text-align: center;
-			line-height: -15%;
-		}
+.interview-quote {
+	font-family: "Libre Caslon Condensed";
+	font-size: 2rem;
+	text-align: center;
+	line-height: -15%;
+}
 
-		.interview_quote {
-			font-family: "Libre Caslon Condensed";
-			font-size: 2rem;
-			text-align: center;
-		}
+.heading-body {
+	font-size: 1rem;
+	text-align: center;
+}
 
-		.interview_heading {
-			margin-top: 1rem;
-
-			.heading_body {
-				font-size: 1rem;
-				text-align: center;
-			}
-
-			.heading_author {
-				text-align: center;	
-			}
-
-			.image_hero {
-				width: 100%;
-				height: 100%;
-				object-fit: contain;
-			}
-		}
-	}
+.heading-author {
+	font-size: 1rem;
+	text-align: center;
 }
 
 
+.image_wrapper {
+	margin: -1rem;
+	display: grid;
+	grid-template-columns: 
+	1fr 
+	min(42rem, 100%)
+    1fr;
+}
+
+.image_wrapper * {
+  grid-column: 2;
+}
+
+.image_hero {
+	width: 100%;
+	aspect-ratio: 4/5;
+	object-fit: cover;
+	grid-column: 1 / 4;
+}
