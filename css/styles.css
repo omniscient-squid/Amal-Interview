@@ -1,0 +1,133 @@
+/* Variables */
+:root {
+	/* Colors*/
+	--text: rgb(0, 0, 0);
+	--orange: #F7921F;
+	--green: #4BB548;
+	--yellow: #E9E71F;
+	--bg: white;
+
+	/* Margins */
+	--margin-outside: 1rem;
+	--margin-bottom: 1rem;
+}
+
+/* Global */
+
+body {
+	font-family: "Space Grotesk";
+	color: var(--text);
+}
+
+/* Header */
+
+.site-header {
+	position: relative;
+	margin-top: 3rem;
+	margin-left: var(--margin-outside);
+	margin-right: var(--margin-outside);
+	margin-bottom: var(--margin-outside);
+	
+	.site-tagline {
+		width: 100%;
+		align-items: center;
+
+		* {
+			font-family: "Libre Caslon Condensed";
+			font-size: 2rem;
+			display: flex;
+		}
+	
+		.Green_Orange_Highlight {
+			color: var(--orange);
+			background-color: var(--green);
+		}
+		.Yellow_Green_Highlight {
+			color: var(--green);
+			background-color: var(--yellow);
+		}
+		.Comic_Neue {
+			font-family: "Comic Neue";
+		}
+		.Orange_Yellow_Highlight {
+			color: var(--yellow);
+			background-color: var(--orange);
+		}
+	}
+
+	.site-button {
+		background-color: var(--green);
+	}
+
+	.menu {
+		position: relative;
+		display: block;
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+
+		a {
+			font-family: "Libre Caslon Condensed";
+			font-size: 4rem;
+		}
+
+	}
+
+	.menu_mark_UL {
+			position: absolute;
+			overflow: visible;
+		}
+
+}
+
+/* Interview */
+
+
+
+.wrapper {
+	margin: var(--margin-outside);
+
+		.interview_main {
+			margin-top: 1rem;
+
+		.section-heading {
+			font-family: "arial-rounded-mt-pro";
+			text-transform: uppercase;
+			font-size: 1.5rem;
+		}
+
+		.interview_heading {
+			font-family: "Libre Caslon Condensed";
+			font-size: 3.5rem;
+			text-align: center;
+			line-height: -15%;
+		}
+
+		.interview_quote {
+			font-family: "Libre Caslon Condensed";
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.interview_heading {
+			margin-top: 1rem;
+
+			.heading_body {
+				font-size: 1rem;
+				text-align: center;
+			}
+
+			.heading_author {
+				text-align: center;	
+			}
+
+			.image_hero {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}
+
+
