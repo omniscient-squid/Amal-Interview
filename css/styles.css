@@ -17,9 +17,15 @@
 body {
 	font-family: "Space Grotesk";
 	color: var(--text);
+	font-size: .90rem;
 }
 
 /* Header */
+
+.site-logo {
+	margin: auto;
+	width: 100%;
+}
 
 .site-header {
 	position: relative;
@@ -27,15 +33,16 @@ body {
 	margin-left: var(--margin-outside);
 	margin-right: var(--margin-outside);
 	margin-bottom: var(--margin-outside);
-	
+
 	.site-tagline {
-		width: 100%;
 		align-items: center;
 
 		* {
 			font-family: "Libre Caslon Condensed";
 			font-size: 2rem;
 			display: flex;
+			flex-flow: row wrap;
+			margin: auto;
 		}
 	
 		.Green_Orange_Highlight {
@@ -55,9 +62,14 @@ body {
 		}
 	}
 
-	.site-button {
-		background-color: var(--green);
+	a {
+		margin: auto;
+		.site-button {
+			background-color: var(--green);
+		}
 	}
+
+
 
 	.menu {
 		position: relative;
@@ -65,19 +77,43 @@ body {
 		border-style: solid;
 		border-width: 1px;
 		border-color: black;
+		width: 15rem;
+		text-align: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		margin: auto;
+		margin-top: 1rem;
 
 		a {
 			font-family: "Libre Caslon Condensed";
-			font-size: 4rem;
+			font-size: 3rem;
+		}
+
+		.menu-mark-UL {
+		position: absolute;
+		top: -1.5rem;
+		left: -1.5rem;
+		}
+
+		.menu-mark-UR {
+		position: absolute;
+		top: -1.5rem;
+		right: -1.5rem;
+		}
+
+		.menu-mark-LL {
+		position: absolute;
+		bottom: -1.5rem;
+		left: -1.5rem;
+		}
+
+		.menu-mark-LR {
+		position: absolute;
+		bottom: -1.5rem;
+		right: -1.5rem;
 		}
 
 	}
-
-	.menu_mark_UL {
-		position: absolute;
-		overflow: visible;
-	}
-
 }
 
 /* Interview */
@@ -86,36 +122,81 @@ body {
 	margin: var(--margin-outside);
 }
 
+/* Interview Heading */
+
 .section-heading {
 	font-family: "arial-rounded-mt-pro";
 	text-transform: uppercase;
 	font-size: 1.5rem;
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: 2px;
+	position: relative;
+}
+
+.interview-main {
+	position: relative;
+	margin-top: 2rem;
+
+		.interview-mark-UL {
+			position: absolute;
+			top: 7.5rem;
+			left: .5rem;
+		}
+
+		.interview-mark-UR {
+			position: absolute;
+			top: 7.5rem;
+			right: .5rem;
+		}
+
+		.interview-mark-LL {
+			position: absolute;
+			bottom: -5rem;
+			right: .5rem;
+		}
+
+		.interview-mark-LR {
+			position: absolute;
+			bottom: -5rem;
+			left: .5rem;
+		}
 }
 
 .interview-headline {
 	font-family: "Libre Caslon Condensed";
-	font-size: 3.5rem;
+	font-size: 3rem;
 	text-align: center;
-	line-height: -15%;
+	line-height: 1;
+	position: absolute;
+	top: 3rem;
 }
 
 .interview-quote {
 	font-family: "Libre Caslon Condensed";
 	font-size: 2rem;
+	font-style: italic;
 	text-align: center;
 	line-height: -15%;
+	position: absolute;
+	top: 25rem;
+	color:var(--bg);
 }
 
 .heading-body {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-align: center;
+	top: 32rem;
+	position: relative;
+	text-transform: capitalize;
 }
 
 .heading-author {
 	font-size: 1rem;
+	top: 32rem;
 	text-align: center;
+	position: relative;
 }
-
 
 .image_wrapper {
 	margin: -1rem;
@@ -135,4 +216,35 @@ body {
 	aspect-ratio: 4/5;
 	object-fit: cover;
 	grid-column: 1 / 4;
+	margin-top: 3.75rem;
+}
+
+/* Interview Body */
+
+.interview-body {
+	margin-top: 6rem;
+	position: relative;
+	padding: 1rem;
+
+	br {
+		line-height: 1;
+	}
+
+	.interview-body-marks {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.interview-date {
+		text-transform: uppercase;
+		text-align: center;
+		display: block;
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+		margin-top: 1rem;
+	}
+
 }
