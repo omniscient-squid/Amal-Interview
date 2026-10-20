@@ -44,3 +44,6 @@ button {
 	border-radius: 0;
 	cursor: pointer;
 }
+em {
+  font-style: normal;
+}

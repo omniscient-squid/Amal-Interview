@@ -188,7 +188,7 @@ body {
 	text-align: center;
 	top: 32rem;
 	position: relative;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 .heading-author {
@@ -245,6 +245,17 @@ body {
 		border-width: 1px;
 		border-color: black;
 		margin-top: 1rem;
+	}
+
+	.interview-question {
+		font-family: "Libre Caslon Condensed";
+		font-size: 1.25rem;
+	}
+	
+	.interview-content {
+		em {
+			font-family: "Libre Caslon Condensed";
+		}
 	}
 
 }
