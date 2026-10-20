@@ -39,7 +39,7 @@ ul {
 button {
 	position: relative;
 	background: none;
-	border:1px solid #000;
+	border: none;
 	padding: .5em;
 	border-radius: 0;
 	cursor: pointer;
