@@ -306,7 +306,7 @@ body {
 		}
 	}
 
-	.pull_quote {
+	.pull-quote {
 		position: relative;
 		font-family: "Libre Caslon Condensed";
 		font-size: 2.5rem;
@@ -317,24 +317,32 @@ body {
 		border-left: var(--text) dotted;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
+
+	.GY_Highlight_PQ {
+		color: var(--yellow);
+		background-color: var(--green);
+	}
+
 
 	.PQ1-mark-UL {
 		position: absolute;
-		top: -1rem;
-		left: -1rem;
+		top: -1.5rem;
+		left: -1.5rem;
 	}
 
 	.PQ1-mark-UR {
 		position: absolute;
-		top: -1rem;
-		right: -1rem;
+		top: -1.5rem;
+		right: -1.5rem;
 	}
 
 	.PQ1-mark-LL {
 		position: absolute;
-		bottom: -1rem;
-		left: -1rem;
+		bottom: -1.5rem;
+		left: -1.5rem;
 
 	}
 
@@ -350,5 +358,43 @@ body {
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	.BNW-images {
+		margin: -2rem;
+		display: grid;
+		grid-template-columns: 
+		1fr 
+		min(42rem, 100%)
+		1fr;
+	}
+
+	.BNW-images * {
+	grid-column: 2;
+	}
+
+	.BNW-image-1 {
+		margin-top: 3rem;
+		width: 100%;
+		aspect-ratio: 5/2;
+		object-fit: cover;
+		grid-column: 1 / 4;
+	}
+
+	.BNW-image-2 {
+		margin-top: 3rem;
+		width: 100%;
+		aspect-ratio: 5/3;
+		object-fit: cover;
+		grid-column: 1 / 4;
+	}
+
+	.BNW-image-3 {
+		margin-top: 3rem;
+		width: 100%;
+		aspect-ratio: 3/5;
+		object-fit: cover;
+		grid-column: 1 / 4;
+	}
+
 }
 
