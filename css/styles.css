@@ -356,6 +356,11 @@ body {
 		background-color: var(--green);
 	}
 
+	.OY_Highlight_PQ {
+		color: var(--orange);
+		background-color: var(--yellow);
+	}
+
 
 
 	.PQ1-mark-UL {
@@ -482,5 +487,25 @@ body {
 		font-style: italic;
 	}
 
+	.alien-image {
+		margin: -2rem;
+		display: grid;
+		grid-template-columns: 
+		1fr 
+		min(42rem, 100%)
+		1fr;
+	}
+
+	.alien-image * {
+	grid-column: 2;
+	}
+
+	.spielberg-alien{
+		margin-top: 3rem;
+		width: 100%;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		grid-column: 1 / 4;
+	}
 
 }
