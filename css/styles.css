@@ -326,6 +326,17 @@ body {
 		background-color: var(--green);
 	}
 
+	.YG_Highlight_PQ {
+		color: var(--green);
+		background-color: var(--yellow);
+	}
+
+	.OG_Highlight_PQ {
+		color: var(--green);
+		background-color: var(--orange);
+	}
+
+
 
 	.PQ1-mark-UL {
 		position: absolute;
@@ -396,5 +407,55 @@ body {
 		grid-column: 1 / 4;
 	}
 
-}
+	.desk-images {
+		margin: -2rem;
+		display: grid;
+		grid-template-columns: 
+		1fr 
+		min(42rem, 100%)
+		1fr;
+	}
 
+	.desk-images * {
+	grid-column: 2;
+	}
+
+	.desk-image-1 {
+		margin-top: 3rem;
+		width: 100%;
+		aspect-ratio: 4/5;
+		object-fit: cover;
+		grid-column: 1 / 4;
+
+	}
+
+	.desk-image-2 {
+		margin-top: 3rem;
+		width: 100%;
+		aspect-ratio: 5/4;
+		object-fit: cover;
+		grid-column: 1 / 4;
+	}
+
+	.UBIK-image {
+		margin: -2rem;
+		display: grid;
+		grid-template-columns: 
+		1fr 
+		min(42rem, 100%)
+		1fr;
+	}
+
+	.UBIK-image * {
+	grid-column: 2;
+	}
+
+	.UBIK {
+		margin-top: 3rem;
+		width: 100%;
+		aspect-ratio: 4/6.5;
+		object-fit: cover;
+		grid-column: 1 / 4;
+	}
+
+}
