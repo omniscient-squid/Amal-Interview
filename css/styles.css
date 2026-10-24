@@ -321,6 +321,21 @@ body {
 		margin-right: 1rem;
 	}
 
+	.pull-quote-long {
+		position: relative;
+		font-family: "Libre Caslon Condensed";
+		font-size: 2rem;
+		text-align: left;
+		padding: 0.75rem;
+		line-height: 1;
+		display: block;
+		border-left: var(--text) dotted;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
 	.GY_Highlight_PQ {
 		color: var(--yellow);
 		background-color: var(--green);
@@ -334,6 +349,11 @@ body {
 	.OG_Highlight_PQ {
 		color: var(--green);
 		background-color: var(--orange);
+	}
+
+	.GO_Highlight_PQ {
+		color: var(--orange);
+		background-color: var(--green);
 	}
 
 
@@ -457,5 +477,10 @@ body {
 		object-fit: cover;
 		grid-column: 1 / 4;
 	}
+
+	.italics {
+		font-style: italic;
+	}
+
 
 }
