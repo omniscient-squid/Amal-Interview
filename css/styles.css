@@ -40,12 +40,18 @@ body {
 	margin-right: var(--margin-outside);
 	margin-bottom: var(--margin-outside);
 
-	.site-logo{
-		order: 2;
-	}
 
 	@media screen and (min-width: 900px) {
 		display: flex;
+		margin-top: 1rem;
+		align-items: center;
+		justify-content: space-evenly;
+
+		.site-logo{
+			order: 2;
+			width: auto;
+			margin: 0;
+		}
 	}
 
 	.site-tagline {
@@ -111,12 +117,24 @@ body {
 		margin-left: 2rem;
 		margin-right: 2rem;
 
+		@media screen and (min-width: 900px) {
+			display: flex;
+			flex-direction: row;
+			order: 3;
+			border: none;
+			padding: 0;
+			margin: 0;
+
+		}
+
 		a {
 			font-family: "Libre Caslon Condensed";
 			font-size: 3rem;
 
 			@media screen and (min-width: 900px) {
 			font-size: 2rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
 			}
 		}
 
@@ -124,30 +142,40 @@ body {
 			position: absolute;
 			top: -1.5rem;
 			left: -1.5rem;
+			
+			@media screen and (min-width: 900px) {
+				display: none;
+			}
 		}
 
 		.menu-mark-UR {
 			position: absolute;
 			top: -1.5rem;
 			right: -1.5rem;
+
+			@media screen and (min-width: 900px) {
+				display: none;
+			}
 		}
 
 		.menu-mark-LL {
 			position: absolute;
 			bottom: -1.5rem;
 			left: -1.5rem;
+
+			@media screen and (min-width: 900px) {
+				display: none;
+			}
 		}
 
 		.menu-mark-LR {
 			position: absolute;
 			bottom: -1.5rem;
 			right: -1.5rem;
-		}
 
-		@media screen and (min-width: 900px) {
-			display: flex;
-			order: 3;
-			border: none;
+			@media screen and (min-width: 900px) {
+				display: none;
+			}
 		}
 
 	}	
