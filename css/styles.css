@@ -40,8 +40,20 @@ body {
 	margin-right: var(--margin-outside);
 	margin-bottom: var(--margin-outside);
 
+	.site-logo{
+		order: 2;
+	}
+
+	@media screen and (min-width: 900px) {
+		display: flex;
+	}
+
 	.site-tagline {
 		align-items: center;
+
+		@media screen and (min-width: 900px) {
+			display: none;
+		}	
 
 		* {
 			font-family: "Libre Caslon Condensed";
@@ -72,21 +84,20 @@ body {
 	}
 
 
-
 	.js-menu-trigger {
 			background-color: var(--green);
 			margin-top: .5rem;
 			margin-bottom: .5rem;
 			display: grid;
 			text-align: center;
+
+			@media screen and (min-width: 900px) {
+				display: flex;
+				order: 1;
+			}
 	}
 	
-
 	.menu {
-		display: none;
-	}
-
-	.body.show-menu {
 		position: relative;
 		display: block;
 		border-style: solid;
@@ -103,6 +114,10 @@ body {
 		a {
 			font-family: "Libre Caslon Condensed";
 			font-size: 3rem;
+
+			@media screen and (min-width: 900px) {
+			font-size: 2rem;
+			}
 		}
 
 		.menu-mark-UL {
@@ -129,7 +144,13 @@ body {
 			right: -1.5rem;
 		}
 
+		@media screen and (min-width: 900px) {
+			display: flex;
+			order: 3;
+			border: none;
 		}
+
+	}	
 }
 
 /* Interview */
