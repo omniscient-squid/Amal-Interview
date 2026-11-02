@@ -272,7 +272,7 @@ body {
 	}
 	@media screen and (min-width: 900px) {
 		font-size: 7rem;
-		top: 2rem;
+		top: 5rem;
 		line-height: 1;
 	}
 }
@@ -348,14 +348,59 @@ body {
 
 /* Interview Body */
 
+
 .interview-body {
 	margin-top: 2rem;
 	position: relative;
 	padding: 1rem;
 
+	.interview-body-intro {
+		.GY_Highlight {
+			background-color: var(--green);
+			color: var(--yellow);
+		}
+
+		.OG_Highlight {
+			background-color: var(--orange);
+			color: var(--green);
+		}
+
+		.YG_Highlight {
+			background-color: var(--yellow);
+			color: var(--green);
+		}
+
+		.OY_Highlight {
+			background-color: var(--orange);
+			color: var(--yellow);
+		}
+
+		@media screen and (min-width: 900px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr .5fr;
+			}
+		}
+
 	.intro-headline {
 		font-size: 1.5rem;
 		font-family: "Libre Caslon Condensed";
+
+		@media screen and (min-width: 900px) {
+			grid-column: 2/3;
+		}
+	}
+
+	.intro-paragraph {
+		@media screen and (min-width: 900px) {
+			grid-column: 2/3;
+		}
+	}
+
+	.interview-body-1-1 {
+		@media screen and (min-width: 900px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr .5fr;
+		}
 	}
 
 	br {
@@ -377,16 +422,45 @@ body {
 		border-width: 1px;
 		border-color: black;
 		margin-top: 1rem;
+		@media screen and (min-width: 900px) {
+			grid-column: 2;
+			font-size: 1.5rem;
+		}
 	}
 
 	.interview-question {
 		font-family: "Libre Caslon Condensed";
 		font-size: 1.25rem;
+		@media screen and (min-width: 900px) {
+			grid-column: 2;
+		}
+	}
+
+	.interview-body-1-1-content {
+		@media screen and (min-width: 900px) {
+			grid-column: 2;
+			order: 2;
+		}
+	}
+
+	.interview-body-1-2-content {
+		@media screen and (min-width: 900px) {
+			grid-column: 2;
+			order: 4;
+		}
 	}
 	
 	.interview-content {
 		em {
 			font-family: "Libre Caslon Condensed";
+		}
+	}
+
+	.interview-body-1-1-images {
+		@media screen and (min-width: 900px) {
+			grid-column: 1;
+			order: 1;
+			width: 90%;
 		}
 	}
 
@@ -427,6 +501,10 @@ body {
 		em {
 			font-family: "Space Grotesk";
 		}
+
+		@media screen and (min-width: 900px) {
+			grid-column: 1;
+		}
 	}
 
 	.pull-quote {
@@ -442,6 +520,14 @@ body {
 		margin-bottom: 1rem;
 		margin-left: 1rem;
 		margin-right: 1rem;
+
+		@media screen and (min-width: 900px) {
+			grid-column: 2 / 3;
+			order: 3;
+			font-size: 4rem;
+			width: 125%;
+			padding: 3rem 3rem 3rem 1rem;
+		}
 	}
 
 	.pull-quote-long {
